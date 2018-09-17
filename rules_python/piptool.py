@@ -203,7 +203,7 @@ def main():
 #
 # Generated from {input}
 
-load("@io_bazel_rules_python//python:whl.bzl", "whl_library")
+load("@io_bazel_rules_python_new//python:whl.bzl", "whl_library")
 
 def pip_install():
   {whl_libraries}

@@ -20,7 +20,7 @@ import zipfile
 
 
 def TestData(name):
-  return os.path.join(os.environ['TEST_SRCDIR'], 'io_bazel_rules_python', name)
+  return os.path.join(os.environ['TEST_SRCDIR'], 'io_bazel_rules_python_new', name)
 
 
 def _format_toc(filename):
