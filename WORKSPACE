@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-workspace(name = "io_bazel_rules_python")
+workspace(name = "io_bazel_rules_python_new")
 
 # Skydoc stuff
 git_repository(
