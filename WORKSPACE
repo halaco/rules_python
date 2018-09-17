@@ -93,6 +93,16 @@ http_file(
            "wheel-0.31.1-py2.py3-none-any.whl"),
 )
 
+
+http_file(
+    name = "GitPython_2_1_11_whl",
+    sha256 = "563221e5a44369c6b79172f455584c9ebbb122a13368cc82cb4b5addff788f82",
+    # From https://pypi.org/project/wheel/
+    url = ("https://files.pythonhosted.org/packages/fe/e5/" +
+           "fafe827507644c32d6dc553a1c435cdf882e0c28918a5bab29f7fbebfb70/" +
+           "GitPython-2.1.11-py2.py3-none-any.whl"),
+)
+
 http_file(
     name = "mock_whl",
     sha256 = "5ce3c71c5545b472da17b72268978914d0252980348636840bd34a00b5cc96c1",

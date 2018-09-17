@@ -58,6 +58,16 @@ class WheelTest(unittest.TestCase):
     self.assertEqual(set(wheel.extras()), set())
     self.assertEqual('pypi__futures_2_2_0', wheel.repository_name())
 
+  def test_whl_with_GitPython_METADATA_file(self):
+    td = TestData('GitPython_2_1_11_whl/file/GitPython-2.1.11-py2.py3-none-any.whl')
+    wheel = whl.Wheel(td)
+    self.assertEqual(wheel.name(), 'GitPython')
+    self.assertEqual(wheel.distribution(), 'GitPython')
+    self.assertEqual(wheel.version(), '2.1.11')
+    self.assertEqual(set(wheel.dependencies()), set(['gitdb2']))
+    self.assertEqual(set(wheel.extras()), set())
+    self.assertEqual('pypi__GitPython_2_1_11', wheel.repository_name())
+
   def test_whl_with_METADATA_and_extras_file(self):
     td = TestData('wheel_0_31_1_whl/file/wheel-0.31.1-py2.py3-none-any.whl')
     wheel = whl.Wheel(td)

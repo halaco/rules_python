@@ -36,6 +36,7 @@ py_test(
         "@grpc_whl//file",
         "@mock_whl//file",
         "@wheel_0_31_1_whl//file",
+        "@GitPython_2_1_11_whl//file",
     ],
     deps = [
         ":whl",

@@ -248,6 +248,7 @@ def main():
 
   with open(os.path.join(args.directory, 'BUILD'), 'w') as f:
     f.write("""
+# debug version
 package(default_visibility = ["//visibility:public"])
 
 load("{requirements}", "requirement")
